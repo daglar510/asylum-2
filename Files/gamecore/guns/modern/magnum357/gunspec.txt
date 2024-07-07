@@ -1,0 +1,186 @@
+;// .357 Magnum Revolver
+;// Revision 1.0  4/15/15
+;// Right-Click to Aim Down Sights
+
+;// Ammunition
+
+poolammo		= magnum
+
+reloadqty		= 6
+chamberedround		= 0
+
+noautoreload		= 0
+nofullreload		= 1
+forcezoomout		= 1
+addtospare		= 1
+
+npcignorereload		= 0
+
+
+;// Range and damage
+
+damage			= 50
+range			= 8000
+force           	= 80
+scorchtype		= 1
+noscorch		= 0
+
+
+;// Accuracy
+
+simplezoom		= 1
+accuracy		= 50
+runacc			= 300
+simplezoomacc		= 1
+zoomaccuracy		= 40
+zoomaccuracybreath	= 5000
+zoomaccuracybreathhold  = 1
+zoomaccuracyheld	= 1
+zoomholdbreath		= 16
+
+
+;// HUD handling characteristics
+usespotlighting         = 1
+
+zoomwalkspeed		= 0.7
+zoomturnspeed		= 0.7
+plrmovespeedmod		= 1.0
+plremptyspeedmod	= 1.0
+plrturnspeedmod		= 1.0
+plrjumpspeedmod		= 1.0
+plrreloadspeedmod	= 0.5
+
+recoily			= 40
+recoilyreturn		= 97
+recoilx			= 5
+recoilxreturn		= 95
+
+zoomrecoily		= 30
+zoomrecoilyreturn	= 99
+zoomrecoilx		= 2
+zoomrecoilxreturn	= 99
+
+zoomgunlagspeed		= 0
+zoomgunlagxmax		= 2
+zoomgunlagymax		= 0.75
+
+gunlagspeed		= 10
+gunlagxmax		= 10
+gunlagymax		= 5
+
+simplezoomspeed		= 10
+
+disablerunandshoot	= 0
+
+reloadspeed 		= 150
+
+
+;// Visuals
+
+textured		= gun_D.dds
+effect			= effectbank\reloaded\weapon_bone.fx
+transparency		= 0
+minpolytrim		= 32
+
+;// GUN HUD (0-colt,1-magnum,2-uzi,3-shotgun,4-rifle,5-rpg)
+
+statuspanelcode		= 1
+
+;// WEAPON Style (1-pistol,2-rocket,3-shotgun,4-uzi,5-assault)
+
+weapontype		= 1
+
+;// NPC Decal 
+
+decal           	= muzzleflash4
+decalforward    	= 100
+
+
+;//Model positions
+
+horiz			= 0
+vert			= -1
+forward			= 4
+runy			= -1
+simplezoommod		= 5
+simplezoomx		= 0
+simplezoomy		= 0
+
+
+;// Muzzleflash
+
+muzzlecolorR		= 168
+muzzlecolorG		= 100
+muzzlecolorB		= 36
+
+muzzleflash		= 4
+simplezoomflash		= 1
+muzzlesize		= 90
+smokedecal		= gunsmoke
+smokespeed		= 14
+
+alignx			= 12
+aligny			= -3
+alignz			= 60
+
+zoomalignx		= 0
+zoomaligny		= 2
+zoomalignz		= 50
+
+
+;// Brass System
+
+brass			= 0
+
+
+;// HUD ANIMATION (timeline 0-?)
+
+keyframe ratio		= 1
+simplezoomanim		= 1
+useempty		= 1
+disablemovespeedmod	= 0
+
+select			= 10,17
+idle			= 30,100
+move			= 350,404
+;run    	        = 700,780
+start fire		= 110,112
+end fire		= 113,119
+reload			= 501,601
+putaway			= 141,149
+zoomto			= 156,161
+zoomfrom		= 164,169
+zoom idle		= 210,270
+zoom move		= 280,340
+zoom start fire		= 187,188
+zoom end fire		= 189,195
+
+empty select		= 10,17
+empty idle		= 30,100
+empty move		= 350,404
+empty run    	        = 700,780
+empty reload		= 501,601
+empty putaway		= 141,149
+empty zoomto		= 156,161
+empty zoomfrom		= 164,169
+empty zoom idle		= 210,270
+empty zoom move		= 280,340
+
+
+;// GUN Sounds (0-zoom,1-fire,2-reload,3-dryfire,4-putaway)
+
+sound0			= zoom.wav
+sound1			= fire1.wav
+sound2			= reload.wav
+sound3			= dryfire.wav
+sound4			= putaway.wav
+sound5	       	 	= retrieve.wav
+fireloop		= 0
+
+
+;// HUD sound frames list
+
+keyframe ratio  	= 1
+soundframes		= 2
+sframe0			= 502,2
+sframe1			= 11,5
